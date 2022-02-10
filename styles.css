@@ -1,0 +1,172 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.uncolored-section {
+    padding: 0 5%;
+}
+/* Title */
+#title {
+    /* background-color: #E26A2C; */
+    color: black;
+}
+
+.title-row {
+    padding: 0 0.6%;
+}
+
+.title-text {
+    font-size: 6rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 12% 5% 0 0;
+    text-align: right;
+}
+
+.title-image {
+    width: 45%;
+    position: relative;
+    /* left: 5% */
+}
+
+/* Nav Bar */
+nav {
+    margin: 5% 0;
+    margin-bottom: 5%;
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem; /*Need to look into this NOTE: Need to have this specific selector combo because Body selector has a higher precedence than navbar-. So this will result to the css of Body to be applied rather than the navbar-brand css*/ 
+    font-weight: 900;  /*OR Make sure that the bootstrap css is applied first in the headings, THEN the custom css.
+                        This is because it will read and apply the bootstrap css then apply the custom css. 
+                        If it was the other way around, then it will apply the custom css first, then overrride any custom css to the Bootstrap css*/
+}
+
+.navbar-item {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0 15px;
+}
+
+/* Excerpt */
+#excerpt {
+    background-color: #FDA65D;
+    margin: 3% 0;
+    color: rgb(255, 255, 255);
+}
+
+.excerpt-author{
+    text-align: right;
+    padding-right: 5%;
+}
+
+.excerpt-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem; 
+    font-weight: 500;
+    padding: 5% 20%; 
+}
+
+/* Product Description */
+.product-description-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2;
+    padding: 8.5% 2%;
+    margin-bottom: 0%;
+}
+
+.product-description-image {
+    text-align: center;
+    width: 50%;
+    padding: 0 6% 
+}
+
+/* Shop Now */ 
+.button a:link, .button a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button {
+    font-family: Arial;
+    font-size: 4rem;
+    padding: 20px 40px 20px 40px;
+    margin: 3rem 5rem;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.colored-section {
+    text-align: center;
+}
+
+#shop-now {
+    margin: 3% 0%;
+    /* background-color: #FF8243; */
+}
+.button {
+    background-color: #FF8243;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    font-size: 15px;
+}
+
+#footer p {
+    font-size: 1.5rem;
+}
+
+.footer-icons {
+    margin-bottom: 1%;
+}
+
+.footer-copyright {
+    margin-bottom: 10px;
+}
+.fab, .fas {
+    padding: 0 16px;
+}
+
+.icon-link {
+    color: black;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+/* SHOP */
+
+/* HOT SAUCES */
+.shop {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#hot-sauce{
+    text-align: center;
+}
+
+.og-hotsauce {
+    width: 17.6rem;
+}
+
+.product-card {
+    padding: 0 5rem;
+}
+.product-text {
+    font-size: 2rem;
+}
