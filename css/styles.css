@@ -93,6 +93,7 @@ nav {
 
 .button {
     font-family: Arial;
+    border: black;
     font-size: 4rem;
     padding: 20px 40px 20px 40px;
     margin: 3rem 5rem;
