@@ -2,7 +2,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .uncolored-section {
     padding: 0 5%;
 }
@@ -74,6 +73,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 2rem;
+    font-size: 2vw; /*What the fuck is the vw value? View Window?? bruh lmao*/
     line-height: 2;
     padding: 8.5% 2%;
     margin-bottom: 0%;
@@ -81,6 +81,7 @@ nav {
 
 .product-description-image {
     text-align: center;
+    position: static;
     width: 50%;
     padding: 0 6% 
 }
@@ -92,8 +93,9 @@ nav {
 }
 
 .button {
+    background-color: #FF8243;
+    border: white;
     font-family: Arial;
-    border: black;
     font-size: 4rem;
     padding: 20px 40px 20px 40px;
     margin: 3rem 5rem;
@@ -112,9 +114,6 @@ nav {
 #shop-now {
     margin: 3% 0%;
     /* background-color: #FF8243; */
-}
-.button {
-    background-color: #FF8243;
 }
 
 /* Footer */
@@ -152,13 +151,16 @@ nav {
 
 /* HOT SAUCES */
 .shop {
-    font-size: 3rem;
+    border-bottom: 5px solid black;
+    font-size: 4.5rem;
+    font-weight: 500;
     text-align: center;
-    margin-bottom: 4rem;
+    margin: 0 35% 2% 35%;
 }
 
-#hot-sauce{
+#hot-sauce, #relish{
     text-align: center;
+    margin: 0 0 8% 0;
 }
 
 .og-hotsauce {
@@ -168,6 +170,27 @@ nav {
 .product-card {
     padding: 0 5rem;
 }
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-hotsauce {
+    margin: 0 10%;
+}
+
 .product-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    
+}
+
+/* Relish */
+.coming-soon {
+    text-align: center;
+    font-size: 4rem;
+    margin: 1% 5%;
+    padding: 2% 10%;
+    background-color: orange;
+    border-radius: 5px;
 }
