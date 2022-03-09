@@ -60,7 +60,7 @@ body {
     padding: 0 15px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .navbar-brand {
         font-size: 1.5rem;
     }
@@ -93,7 +93,7 @@ body {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .excerpt-text {
         font-size: 21px;
         padding: 5% 5%;
@@ -111,23 +111,22 @@ body {
 }
 
 .product-description-image {
-    max-width: 100%;
-    height: auto
+    width: 80%;
     /* padding: 2% 6%  */
 }
 
-@media (max-width: 1201px) {
+@media (min-width: 1201px) {
     .product-description-text {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .product-description-image {
-        width: 50%;
+        width: 45%;
         
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .product-description-text {
         font-size: 1rem;
         text-align: justify;
@@ -195,7 +194,7 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     #footer {
         font-size: 10px;
     }
