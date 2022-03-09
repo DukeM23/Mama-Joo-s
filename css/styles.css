@@ -5,35 +5,46 @@ body {
 .uncolored-section {
     padding: 0 5%;
 }
+
 /* Title */
 #title {
     /* background-color: #E26A2C; */
     color: black;
 }
 
-.title-row {
-    padding: 0 0.6%;
+.title-slogan {
+    margin: 5% 0;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title-text {
-    font-size: 6rem;
+    font-size: 4rem;
     line-height: 1.5;
     font-weight: 500;
-    margin: 12% 5% 0 0;
-    text-align: right;
+    margin: auto;
 }
 
 .title-image {
-    width: 45%;
     position: relative;
-    /* left: 5% */
+}
+
+@media(max-width:980px) {
+    .title-text {
+        font-size: 1.5rem;
+        padding: 10px 10px;
+    }
+    
+    .title-slogan {
+        margin: 0 0 5% 0;
+    }
 }
 
 /* Nav Bar */
-nav {
-    margin: 5% 0;
-    margin-bottom: 5%;
-}
 
 .navbar-brand {
     font-family: 'Montserrat', sans-serif;
@@ -49,10 +60,22 @@ nav {
     padding: 0 15px;
 }
 
+@media (max-width: 400px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-item {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0 15px;
+    }
+}
+
 /* Excerpt */
 #excerpt {
     background-color: #FDA65D;
-    margin: 3% 0;
+    margin: 0 0 5% 0;
     color: rgb(255, 255, 255);
 }
 
@@ -65,7 +88,16 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem; 
     font-weight: 500;
+    text-align: justify;
     padding: 5% 20%; 
+}
+
+
+@media (max-width: 400px) {
+    .excerpt-text {
+        font-size: 21px;
+        padding: 5% 5%;
+    }
 }
 
 /* Product Description */
@@ -73,19 +105,40 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 2rem;
-    font-size: 2vw; /*What the fuck is the vw value? View Window?? bruh lmao*/
     line-height: 2;
     padding: 8.5% 2%;
-    margin-bottom: 0%;
+    margin: auto;
 }
 
 .product-description-image {
-    text-align: center;
-    position: static;
-    width: 50%;
-    padding: 0 6% 
+    max-width: 100%;
+    height: auto
+    /* padding: 2% 6%  */
 }
 
+@media (max-width: 1201px) {
+    .product-description-text {
+        font-size: 1.5rem;
+    }
+
+    .product-description-image {
+        width: 50%;
+        
+    }
+}
+
+@media (max-width: 400px) {
+    .product-description-text {
+        font-size: 1rem;
+        text-align: justify;
+        padding: 2.5% 0%
+    }
+
+    .product-description-image {
+        padding: 0;
+        width: 100%;
+    }
+}
 /* Shop Now */ 
 .button a:link, .button a:visited {
     text-decoration: none;
@@ -98,7 +151,7 @@ nav {
     font-family: Arial;
     font-size: 4rem;
     padding: 20px 40px 20px 40px;
-    margin: 3rem 5rem;
+    margin: 3rem 0rem;
     text-decoration: none;
 }
 
@@ -109,11 +162,6 @@ nav {
 
 .colored-section {
     text-align: center;
-}
-
-#shop-now {
-    margin: 3% 0%;
-    /* background-color: #FF8243; */
 }
 
 /* Footer */
@@ -147,6 +195,15 @@ nav {
     text-decoration: none;
 }
 
+@media (max-width: 400px) {
+    #footer {
+        font-size: 10px;
+    }
+
+    #footer p {
+        font-size: 12px;
+    }
+}
 /* SHOP */
 
 /* HOT SAUCES */
@@ -193,4 +250,19 @@ nav {
     padding: 2% 10%;
     background-color: orange;
     border-radius: 5px;
+}
+
+/* About Us */
+.about-us-title {
+    border-bottom: 5px solid black;
+    font-size: 4.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 35% 2% 35%;
+}
+
+.about-us-text {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2;
 }
